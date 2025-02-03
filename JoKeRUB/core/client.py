@@ -151,7 +151,7 @@ class HuReClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**تقرير خطا HELLAS **\n\n"
-                        link = "[هنا](https://t.me/HELLASSupport)"
+                        link = "[هنا](https://t.me/k_jj_jSupport)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
