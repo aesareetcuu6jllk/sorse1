@@ -271,7 +271,7 @@ async def stopspamrz(event):
         delgvar("spamwork")
         return await edit_delete(event, "**⌔∮ تم بنجاح ايقاف التكرار **")
     return await edit_delete(event, "**⌔∮ عذرا لم يتم تفعيل التكرار بالاصل**")
-#جميع الاكواد ادناه تمت كتابتها من قبل مطورين 7rB  ممنوع السرقة !
+#جميع الاكواد ادناه تمت كتابتها من قبل مطورين HELLAS  ممنوع السرقة !
 async def robin_nshr(l313l, sleeptimet, chat, message, seconds):
     global yaAli
     yaAli = True
@@ -308,7 +308,7 @@ async def Hussein(event):
 async def robin_allnshr(l313l, sleeptimet, message):
     global yaAli
     yaAli = True
-    7rB _chats = await l313l.get_dialogs()
+    HELLAS_chats = await l313l.get_dialogs()
     while yaAli:
         for chat in robin_chats:
             if chat.is_group:
@@ -341,7 +341,7 @@ super_groups = ["super", "سوبر"]
 async def robin_supernshr(l313l, sleeptimet, message):
     global yaAli
     yaAli = True
-    7rB _chats = await l313l.get_dialogs()
+    HELLAS_chats = await l313l.get_dialogs()
     while yaAli:
         for chat in robin_chats:
             chat_title_lower = chat.title.lower()
@@ -370,7 +370,7 @@ async def Hussein(event):
     yaAli = True
     await robin_supernshr(l313l, sleeptimet, message)
 @l313l.ar_cmd(pattern="ايقاف (النشر|نشر)")
-async def stop_7rB (event):
+async def stop_HELLAS (event):
     global yaAli
     yaAli = False
     await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
