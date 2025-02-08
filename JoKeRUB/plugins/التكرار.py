@@ -271,8 +271,8 @@ async def stopspamrz(event):
         delgvar("spamwork")
         return await edit_delete(event, "**⌔∮ تم بنجاح ايقاف التكرار **")
     return await edit_delete(event, "**⌔∮ عذرا لم يتم تفعيل التكرار بالاصل**")
-#جميع الاكواد ادناه تمت كتابتها من قبل مطورين HELLAS  ممنوع السرقة !
-async def robin_nshr(l313l, sleeptimet, chat, message, seconds):
+#جميع الاكواد ادناه تمت كتابتها من قبل مطورين الجوكر ممنوع السرقة !
+async def aljoker_nshr(l313l, sleeptimet, chat, message, seconds):
     global yaAli
     yaAli = True
     while yaAli:
@@ -298,21 +298,21 @@ async def Hussein(event):
     for chat_username in chat_usernames:
         try:
             chat = await l313l.get_entity(chat_username)
-            await robin_nshr(l313l, seconds, chat.id, message, seconds)  # تمرير قيمة seconds هنا لكل مجموعة
+            await aljoker_nshr(l313l, seconds, chat.id, message, seconds)  # تمرير قيمة seconds هنا لكل مجموعة
         except Exception as e:
             await edit_delete(
                 event, f"⌔∮ لا يمكن العثور على المجموعة أو الدردشة {chat_username}: {str(e)}"
             )
         await asyncio.sleep(1)
     
-async def robin_allnshr(l313l, sleeptimet, message):
+async def aljoker_allnshr(l313l, sleeptimet, message):
     global yaAli
     yaAli = True
-    HELLAS_chats = await l313l.get_dialogs()
+    aljoker_chats = await l313l.get_dialogs()
     while yaAli:
-        for chat in robin_chats:
+        for chat in aljoker_chats:
             if chat.is_group:
-                if chat.title != "مشتركين robin• Team robin ":
+                if chat.title != "مشتركين الجوكر • Team ALjoker":
                     try:
                         if message.media:
                             await l313l.send_file(chat.id, message.media, caption=message.text)
@@ -336,14 +336,14 @@ async def Hussein(event):
     l313l = event.client
     global yaAli
     yaAli = True
-    await robin_allnshr(l313l, sleeptimet, message)
+    await aljoker_allnshr(l313l, sleeptimet, message)
 super_groups = ["super", "سوبر"]
-async def robin_supernshr(l313l, sleeptimet, message):
+async def aljoker_supernshr(l313l, sleeptimet, message):
     global yaAli
     yaAli = True
-    HELLAS_chats = await l313l.get_dialogs()
+    aljoker_chats = await l313l.get_dialogs()
     while yaAli:
-        for chat in robin_chats:
+        for chat in aljoker_chats:
             chat_title_lower = chat.title.lower()
             if chat.is_group and any(keyword in chat_title_lower for keyword in super_groups):
                 try:
@@ -368,9 +368,9 @@ async def Hussein(event):
     l313l = event.client
     global yaAli
     yaAli = True
-    await robin_supernshr(l313l, sleeptimet, message)
+    await aljoker_supernshr(l313l, sleeptimet, message)
 @l313l.ar_cmd(pattern="ايقاف (النشر|نشر)")
-async def stop_HELLAS (event):
+async def stop_aljoker(event):
     global yaAli
     yaAli = False
     await event.edit("**᯽︙ تم ايقاف النشر التلقائي بنجاح ✓** ")
